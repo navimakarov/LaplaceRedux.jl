@@ -75,7 +75,7 @@ jobs:
       - name: Upload branch coverage to Codecov
         uses: codecov/codecov-action@v2
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+          token: bfd0fe06-7d0e-4af0-ab22-9136eef9bf5b
           files: lcov.info
           flags: branch
       
