@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1687457616325,
+  "lastUpdate": 1687460535024,
   "repoUrl": "https://github.com/navimakarov/LaplaceRedux.jl",
   "entries": {
     "Julia benchmark result": [
@@ -68,6 +68,42 @@ window.BENCHMARK_DATA = {
             "value": 1305814895.5,
             "unit": "ns",
             "extra": "gctime=156516556.5\nmemory=2089649168\nallocs=2769052\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "89662728+Andrei32Ionescu@users.noreply.github.com",
+            "name": "Andrei32Ionescu",
+            "username": "Andrei32Ionescu"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1d67d2ec2cf729b8cefb9ba81d466d27dad053c0",
+          "message": "Merge pull request #39 from navimakarov/fix-benchmarks-main\n\nAttempt to fix benchmarking error",
+          "timestamp": "2023-06-22T20:38:45+02:00",
+          "tree_id": "d1cb3704f351d3b4a755c91916bfb04de8323dc6",
+          "url": "https://github.com/navimakarov/LaplaceRedux.jl/commit/1d67d2ec2cf729b8cefb9ba81d466d27dad053c0"
+        },
+        "date": 1687460531752,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fit_la_batched",
+            "value": 361487725,
+            "unit": "ns",
+            "extra": "gctime=52204114.5\nmemory=1061381648\nallocs=1457837\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fit_la_unbatched",
+            "value": 679678860.5,
+            "unit": "ns",
+            "extra": "gctime=98279371.5\nmemory=2089649168\nallocs=2769052\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
           }
         ]
       }
