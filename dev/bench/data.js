@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1687470288339,
+  "lastUpdate": 1687471819049,
   "repoUrl": "https://github.com/navimakarov/LaplaceRedux.jl",
   "entries": {
     "Julia benchmark result": [
@@ -172,6 +172,42 @@ window.BENCHMARK_DATA = {
             "value": 1098224980,
             "unit": "ns",
             "extra": "gctime=138156265\nmemory=2089649168\nallocs=2769052\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "94811276+MarkArdman@users.noreply.github.com",
+            "name": "MarkArdman",
+            "username": "MarkArdman"
+          },
+          "committer": {
+            "email": "94811276+MarkArdman@users.noreply.github.com",
+            "name": "MarkArdman",
+            "username": "MarkArdman"
+          },
+          "distinct": true,
+          "id": "5adcc8de7495031e8e783e9f7e33ddd9b41c8464",
+          "message": "Merge branch 'main' into mlj-interfacing-tweaks",
+          "timestamp": "2023-06-22T23:13:55+02:00",
+          "tree_id": "8225045320ead2f88eb5a16b9413c9583603126a",
+          "url": "https://github.com/navimakarov/LaplaceRedux.jl/commit/5adcc8de7495031e8e783e9f7e33ddd9b41c8464"
+        },
+        "date": 1687471815707,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fit_la_batched",
+            "value": 355405688,
+            "unit": "ns",
+            "extra": "gctime=48249247\nmemory=1061381648\nallocs=1457837\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fit_la_unbatched",
+            "value": 675156943,
+            "unit": "ns",
+            "extra": "gctime=90883413.5\nmemory=2089649168\nallocs=2769052\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
           }
         ]
       }
