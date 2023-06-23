@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1687519621546,
+  "lastUpdate": 1687521959272,
   "repoUrl": "https://github.com/navimakarov/LaplaceRedux.jl",
   "entries": {
     "Julia benchmark result": [
@@ -312,6 +312,38 @@ window.BENCHMARK_DATA = {
             "value": 738780325,
             "unit": "ns",
             "extra": "gctime=92724754\nmemory=2089649168\nallocs=2769052\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "navimakarov",
+            "username": "navimakarov"
+          },
+          "committer": {
+            "name": "navimakarov",
+            "username": "navimakarov"
+          },
+          "id": "eb1d1cbc900777e292ebbd95a65a1da21e86afe6",
+          "message": "Move benchmarks to different branch",
+          "timestamp": "2023-05-31T20:38:56Z",
+          "url": "https://github.com/navimakarov/LaplaceRedux.jl/pull/42/commits/eb1d1cbc900777e292ebbd95a65a1da21e86afe6"
+        },
+        "date": 1687521954861,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fit_la_batched",
+            "value": 393802614,
+            "unit": "ns",
+            "extra": "gctime=49715839\nmemory=1061381648\nallocs=1457837\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fit_la_unbatched",
+            "value": 746091470,
+            "unit": "ns",
+            "extra": "gctime=94395303\nmemory=2089649168\nallocs=2769052\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
           }
         ]
       }
