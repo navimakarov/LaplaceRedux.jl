@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1687512750252,
+  "lastUpdate": 1687519621546,
   "repoUrl": "https://github.com/navimakarov/LaplaceRedux.jl",
   "entries": {
     "Julia benchmark result": [
@@ -276,6 +276,42 @@ window.BENCHMARK_DATA = {
             "value": 706469181.5,
             "unit": "ns",
             "extra": "gctime=85815050\nmemory=2089649168\nallocs=2769052\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "a.ionescu-5@student.tudelft.nl",
+            "name": "Andrei Ionescu",
+            "username": "Andrei32Ionescu"
+          },
+          "committer": {
+            "email": "a.ionescu-5@student.tudelft.nl",
+            "name": "Andrei Ionescu",
+            "username": "Andrei32Ionescu"
+          },
+          "distinct": true,
+          "id": "eb1d1cbc900777e292ebbd95a65a1da21e86afe6",
+          "message": "Fix spelling mistake",
+          "timestamp": "2023-06-23T12:59:16+02:00",
+          "tree_id": "5fdd0c7255c6270cb4cf611ee2ba2fa2e9c87fc2",
+          "url": "https://github.com/navimakarov/LaplaceRedux.jl/commit/eb1d1cbc900777e292ebbd95a65a1da21e86afe6"
+        },
+        "date": 1687519617408,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fit_la_batched",
+            "value": 396981346,
+            "unit": "ns",
+            "extra": "gctime=49468592\nmemory=1061381648\nallocs=1457837\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fit_la_unbatched",
+            "value": 738780325,
+            "unit": "ns",
+            "extra": "gctime=92724754\nmemory=2089649168\nallocs=2769052\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
           }
         ]
       }
