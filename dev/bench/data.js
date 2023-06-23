@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1687525604437,
+  "lastUpdate": 1687526980566,
   "repoUrl": "https://github.com/navimakarov/LaplaceRedux.jl",
   "entries": {
     "Julia benchmark result": [
@@ -380,6 +380,42 @@ window.BENCHMARK_DATA = {
             "value": 651249960.5,
             "unit": "ns",
             "extra": "gctime=80384692.5\nmemory=2089649168\nallocs=2769052\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "94811276+MarkArdman@users.noreply.github.com",
+            "name": "Mark Ardman",
+            "username": "MarkArdman"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6d2ffc1c7140ddd4296bc7b9d6611348ea2a4366",
+          "message": "Merge pull request #41 from navimakarov/linguist-exclusions\n\nLinguist folder exclusion",
+          "timestamp": "2023-06-23T14:49:25+02:00",
+          "tree_id": "19be321b3229b8dcf9c39cd7a511ed8b8dcc2da3",
+          "url": "https://github.com/navimakarov/LaplaceRedux.jl/commit/6d2ffc1c7140ddd4296bc7b9d6611348ea2a4366"
+        },
+        "date": 1687526977275,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fit_la_batched",
+            "value": 305786670,
+            "unit": "ns",
+            "extra": "gctime=38654762\nmemory=1061381648\nallocs=1457837\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fit_la_unbatched",
+            "value": 580189540,
+            "unit": "ns",
+            "extra": "gctime=72903500\nmemory=2089649168\nallocs=2769052\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
           }
         ]
       }
