@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1687521959272,
+  "lastUpdate": 1687525604437,
   "repoUrl": "https://github.com/navimakarov/LaplaceRedux.jl",
   "entries": {
     "Julia benchmark result": [
@@ -344,6 +344,42 @@ window.BENCHMARK_DATA = {
             "value": 746091470,
             "unit": "ns",
             "extra": "gctime=94395303\nmemory=2089649168\nallocs=2769052\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "89662728+Andrei32Ionescu@users.noreply.github.com",
+            "name": "Andrei32Ionescu",
+            "username": "Andrei32Ionescu"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e79c0a775925e2d627b236bdfb5d2be436ebdc04",
+          "message": "Merge pull request #42 from navimakarov/fix-benchmarks-main\n\nMove benchmarks to different branch",
+          "timestamp": "2023-06-23T14:44:12+02:00",
+          "tree_id": "5fdd0c7255c6270cb4cf611ee2ba2fa2e9c87fc2",
+          "url": "https://github.com/navimakarov/LaplaceRedux.jl/commit/e79c0a775925e2d627b236bdfb5d2be436ebdc04"
+        },
+        "date": 1687525601098,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fit_la_batched",
+            "value": 342428076,
+            "unit": "ns",
+            "extra": "gctime=42468268\nmemory=1061381648\nallocs=1457837\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fit_la_unbatched",
+            "value": 651249960.5,
+            "unit": "ns",
+            "extra": "gctime=80384692.5\nmemory=2089649168\nallocs=2769052\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
           }
         ]
       }
