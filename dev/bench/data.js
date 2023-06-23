@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1687512663286,
+  "lastUpdate": 1687512750252,
   "repoUrl": "https://github.com/navimakarov/LaplaceRedux.jl",
   "entries": {
     "Julia benchmark result": [
@@ -240,6 +240,42 @@ window.BENCHMARK_DATA = {
             "value": 697281109.5,
             "unit": "ns",
             "extra": "gctime=94448487\nmemory=2089649168\nallocs=2769052\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "94811276+MarkArdman@users.noreply.github.com",
+            "name": "MarkArdman",
+            "username": "MarkArdman"
+          },
+          "committer": {
+            "email": "94811276+MarkArdman@users.noreply.github.com",
+            "name": "MarkArdman",
+            "username": "MarkArdman"
+          },
+          "distinct": true,
+          "id": "511e9a1105938382d000be857b1d20e61d823732",
+          "message": "Added dev/docs/paper to folders excluded from language analysis",
+          "timestamp": "2023-06-23T11:06:17+02:00",
+          "tree_id": "5f0ae42667ea931e32be9e5b2bfd3801e8cc884a",
+          "url": "https://github.com/navimakarov/LaplaceRedux.jl/commit/511e9a1105938382d000be857b1d20e61d823732"
+        },
+        "date": 1687512745672,
+        "tool": "julia",
+        "benches": [
+          {
+            "name": "fit_la_batched",
+            "value": 389681102,
+            "unit": "ns",
+            "extra": "gctime=50255724\nmemory=1061381648\nallocs=1457837\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
+          },
+          {
+            "name": "fit_la_unbatched",
+            "value": 706469181.5,
+            "unit": "ns",
+            "extra": "gctime=85815050\nmemory=2089649168\nallocs=2769052\nparams={\"gctrial\":true,\"time_tolerance\":0.05,\"samples\":10000,\"evals\":1,\"gcsample\":false,\"seconds\":5,\"overhead\":0,\"memory_tolerance\":0.01}"
           }
         ]
       }
