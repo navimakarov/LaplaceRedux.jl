@@ -381,9 +381,9 @@ function kron(curvature::Union{GGN,EmpiricalFisher}, data; batched::Bool=false)
 
     loss_xy = (x, y) -> curvature.loss_fun(nn(x), y)
     loss = sum(d -> loss_xy(d...), data)
-    decomposed = decompose(
-        Kron(collect(interleave(zip(G_exp, A_exp_zb), zip(G_exp_b, A_exp_b_zb))))
-    )
+
+    kfacs = Kron(collect(interleave(zip(G_exp, A_exp_zb), zip(G_exp_b, A_exp_b_zb))))
+    decomposed = decompose(kfacs)
 
     # NOTE: order is G, A, as in laplace-torch
     return loss, decomposed, n_data
@@ -395,6 +395,7 @@ struct KronDecomposed
     # kfacs :: Vector{Tuple{AbstractArray, AbstractArray}}
     kfacs::Vector{Tuple{Eigen,Eigen}}
     delta::Number
+    _kfacs::Kron
 end
 
 function clamp(eig::Eigen)
@@ -408,14 +409,14 @@ Eigendecompose Kronecker factors and turn into `KronDecomposed`.
 """
 function decompose(K::Kron)
     # TODO filter out negative eigenvals
-    return KronDecomposed(map(b -> map(clamp ∘ eigen, b), K.kfacs), 0)
+    return KronDecomposed(map(b -> map(clamp ∘ eigen, b), K.kfacs), 0, K)
 end
 
 """
 Shift the factors by a scalar across the diagonal.
 """
 function (+)(K::KronDecomposed, delta::Number)
-    return KronDecomposed(K.kfacs, K.delta + delta)
+    return KronDecomposed(K.kfacs, K.delta + delta, K._kfacs)
 end
 
 """
@@ -436,6 +437,7 @@ function (*)(K::KronDecomposed, scalar::Number)
             K.kfacs,
         ),
         K.delta,
+        K._kfacs,
     )
 end
 

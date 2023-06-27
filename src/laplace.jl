@@ -36,7 +36,7 @@ end
     # prior precision (i.e. inverse covariance matrix)
     P₀::Union{AbstractMatrix,UniformScaling}
     # Hessian matrix
-    H::Union{AbstractArray,KronDecomposed,Nothing}
+    H::Union{AbstractArray,KronDecomposed,Kron,Nothing}
     # posterior precision
     P::Union{AbstractArray,KronDecomposed,Nothing}
     # posterior covariance matrix
@@ -285,7 +285,7 @@ function _fit!(
 
     la.loss = loss
     la.H = H
-    la.P = posterior_precision(la)
+    # la.P = posterior_precision(la)
     # NOTE: like in laplace-torch, post covariance is not defined for KronLaplace
     return la.n_data = n_data
 end
