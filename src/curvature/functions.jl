@@ -386,7 +386,7 @@ function kron(curvature::Union{GGN,EmpiricalFisher}, data; batched::Bool=false)
     decomposed = decompose(kfacs)
 
     # NOTE: order is G, A, as in laplace-torch
-    return loss, decomposed, n_data
+    return loss, kfacs, n_data
 end
 
 struct KronDecomposed
